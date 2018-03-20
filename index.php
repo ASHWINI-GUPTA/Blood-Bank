@@ -49,7 +49,7 @@
 <?php
 
 //Retrieving the value from blood_index table
-$result = mysqli_query($con,"SELECT * FROM blood_index");
+$result = mysqli_query($con,"SELECT * FROM blood_index ORDER BY blood_group ");
 //echo '<form action="POST">';
     echo '<table class="table table-hover">
             <thead>
