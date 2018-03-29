@@ -1,5 +1,7 @@
-# Bloodbank
+# Blood-Bank
 Blood Bank is an portal used by  Hospitals and Receivers.
+Only Hospitals can add samples to the Blood Bank, 
+and Receivers can Request the blood sample from the Blood Bank.
 
 To run Application
 

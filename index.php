@@ -5,7 +5,6 @@
  * Date: 2/8/18
  */
 
-
 //TODO: We can populate only indexes which are of User Blood Group type. So the role of Request button will be eliminated.
 /*
  * We have User Blood Group, We will get the Blood Group name
@@ -42,7 +41,6 @@
                 echo $blood_group_user;
                 echo ' )</strong>. Currently, You can only request blood group of you blood type from any Hospital.</div>';
             } ?>
-
         </div>
     </div><br>
 
@@ -50,7 +48,7 @@
 
 //Retrieving the value from blood_index table
 $result = mysqli_query($con,"SELECT * FROM blood_index ORDER BY blood_group ");
-//echo '<form action="POST">';
+
     echo '<table class="table table-hover">
             <thead>
                 <tr>
@@ -85,7 +83,6 @@ $result = mysqli_query($con,"SELECT * FROM blood_index ORDER BY blood_group ");
                 }
         echo "</tbody>";
     echo "</table>";
-//echo '</form>';
 
     //include header template
     require('layout/footer.php');

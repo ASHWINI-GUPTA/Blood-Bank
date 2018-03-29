@@ -18,10 +18,8 @@ require('config/db.php');
 require('layout/header.php');
 
     // If form submitted, insert values into the database.
-    if (isset($_REQUEST['username'])){
-
-        //TODO : Same user is able to register many times
-
+    if (isset($_REQUEST['username']))
+    {
 		$name = stripslashes($_REQUEST['name']); // removes backslashes
 		$name = mysqli_real_escape_string($con,$name); //escapes special characters in a string
 
@@ -56,8 +54,8 @@ require('layout/header.php');
                       <h4 class="alert-heading">Error!</h4>
                       <p>Username already exist.</p>
                       <hr>
-                      <p class="mb-0">Click here to <a href=\'login.php\'>Login</a>.</p>
                   </div>';
+
         } else if (mysqli_num_rows($res_e) > 0) {
             echo '<div class="alert alert-success" role="alert">
                       <h4 class="alert-heading">Error!</h4>
@@ -85,7 +83,7 @@ require('layout/header.php');
     } else
         {
 ?>
-            <div class="col-md-6 offset-3">
+    <div class="col-md-6 offset-3">
         <h3 class="text-center"><?php echo $role?> Registration</h3>
         <hr>
         <?php

@@ -47,6 +47,5 @@ if (!isset($_SESSION["username"])) {
     }
 }
 
-
 //include header template
 require('layout/footer.php');
