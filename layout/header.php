@@ -15,6 +15,9 @@
     <!--    Local Path-->
     <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="style/main.js"></script>
+
 </head>
 <body>
 

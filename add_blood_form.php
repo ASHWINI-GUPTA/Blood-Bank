@@ -12,6 +12,8 @@ include("auth.php"); //include auth.php file on all secure pages
 include("config/get_info.php"); //include for getting user info
 require('layout/header.php');
 
+//TODO: User can also able to add Blood sample to blood bank
+
     if (isset($_POST['blood_group'])) { // && ($_POST['role']=='Hospital')
 
         $blood_group = stripslashes($_REQUEST['blood_group']);
