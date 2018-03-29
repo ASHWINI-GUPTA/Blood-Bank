@@ -48,3 +48,10 @@ a:hover{
     display: none;
 }
 
+.loading {
+    color: Orange;
+}
+
+#loaderIcon {
+    height: 60px;
+}

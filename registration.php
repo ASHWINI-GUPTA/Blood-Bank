@@ -111,8 +111,12 @@ require('layout/header.php');
                                 </select>';
                     }
                 ?>
+                <div class="col text-center loading">
+                    <img src="img/load.gif" id="loaderIcon" style="display:none" />
+                </div>
                 <div>
                     <input class="form-control" type="text" name="username" id="username" placeholder="Username" onBlur="checkUsernameAvailability()" required />
+
                     <div class="alert alert-danger username-failure" role="alert" id="username-failure">
                         Username is not available.
                     </div>
@@ -129,6 +133,9 @@ require('layout/header.php');
                     </div>
                 </div>
                 <input class="form-control" type="password" name="password" placeholder="Password" required />
+
+
+
                 <input class="btn btn-primary btn-block" type="submit" id="register" name="submit" value="Register" disabled="disabled" />
             </form>
         </div>
