@@ -49,7 +49,17 @@ require('layout/header.php');
                     <option value="AB-">AB-</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Save</button>
+            <?php
+
+                if (($_POST['role']=='Hospital')){
+
+                    echo '<button type="submit" class="btn btn-primary">Save</button>';
+
+                } else {
+
+                    echo '<button type="submit" class="btn btn-primary" disabled data-toggle="tooltip" data-placement="top" title="Your not allow to add blood records." >Save</button>';
+                }
+            ?>
         </form>
     </div>
 

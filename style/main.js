@@ -36,10 +36,11 @@ function checkEmailAvailability() {
         success:function(data){
             if (data == 'True'){
                 $('#register').prop('disabled', 'disabled');
-                $('.email-failure').show()
+                $('.email-failure').show();
                 $("#loaderIcon").hide();
             } else {
                 $('#register').prop('disabled', false);
+                $('.email-failure').hide();
                 $("#loaderIcon").hide();
             }
         },
